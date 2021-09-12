@@ -1,0 +1,28 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "core-js": "^3.15.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-steam-openid": "^1.0.0",
+    "nuxt": "^2.15.7",
+    "nuxt-ssr-screen-size": "github:hugojerez/nuxt-ssr-screen-size",
+    "passport-steam": "^1.0.15"
+  },
+  "devDependencies": {
+    "@nuxtjs/svg": "^0.1.12",
+    "fibers": "^5.0.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.35.2",
+    "sass-loader": "^10.2.0"
+  }
+}

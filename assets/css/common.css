@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #0077E0;
+    --secondary-color: #00B3F3;
+
+    --background-color: #F0F1F5;
+    --black-color: #2f2f36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+p a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 1px solid var(--primary-color);
+    transition: 0.4s;
+}
+
+p a:hover:after {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+    border: var(--background-color) 2px solid;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: var(--background-color);
+}
+
+img {
+    user-select: none;
+}
+
+img.icon {
+    width: 22px;
+    height: 22px;
+}
+
+body {
+    font-family: 'Geometria';
+    letter-spacing: 4%;
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.btn-primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 4%;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 8px;
+    background: linear-gradient(315deg, rgba(0, 0, 0, .6) 0%, rgba(255, 255, 255, 0) 100%), #F0F1F5;
+    background-blend-mode: soft-light, normal;
+    box-shadow: -1px -1px 3px #FFFFFF, 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), inset 0px 0px 0px 0.2px rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: color .3s;
+    user-select: none;
+}
+
+.btn-primary > img {
+    fill: var(--black-color);
+    stroke: var(--black-color);
+    width: 18px;
+    height: 18px;
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.btn-primary > img.right-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.btn-primary:hover {
+    color: var(--primary-color);
+}
+
+.btn-primary:active {
+    background: linear-gradient(315deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #EDEEF2;
+    box-shadow: inset -1.5px -1.5px 1.5px rgba(255, 255, 255, 0.7), inset 2.5px 2.5px 1.5px rgba(174, 174, 192, 0.2);
+}
+
+.btn-primary.btn-main {
+    font-family: 'MVB';
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 5%;
+    padding: 8px 24px;
+    letter-spacing: 0.04em;
+}
+
+.btn-primary.btn-main:hover {
+    color: var(--primary-color);
+}
+
+.btn-primary.btn-main > img.right-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.btn-secondary {
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 4%;
+    color: var(--background-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    background: none;
+    border: var(--background-color) 2px solid;
+    border-radius: 16px;
+    transition: color .3s, transform .3s;
+    box-shadow: 0px 6px 6px rgb(0 0 0 / 40%);
+}
+
+.btn-secondary.plain {
+    color: var(--black-color);
+    background-color: var(--background-color);
+}
+
+.btn-secondary:hover {
+    color: var(--background-color);
+    transform: translate(-3px, -3px);
+}
+
+.btn-secondary:active {
+    transform: translate(0px, 0px);
+}
+
+.btn-secondary.plain:hover {
+    color: var(--black-color);
+}
+
+.btn-secondary > img {
+    fill: var(--black-color);
+    stroke: var(--black-color);
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+    margin-left: 5px;
+    transition: margin .1s;
+}
+
+::-moz-selection {
+    color: var(--primary-color);
+    background: none;
+}
+
+::selection {
+    color: var(--primary-color);
+    background: none;
+}
